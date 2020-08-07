@@ -89,7 +89,7 @@ show() in base class
 ```Rect```, ```Triangle```, ```Circle```클래스는 ```Shape``` 클래스를 상속한다. 
 이들 클래스의 상속 계층 구조는 다음 그림과 같다.
 
-![upcasting](./upcasting.png)
+![upcasting](./upcasting.png )
 
 포인터 변수를 선언할 때 포인터 변수에 저장한 주소에 포인터 변수의 자료형에 해당하는 데이터가 저장된다.
 즉 ```Rect``` 객체의 포인터 변수는 ```Rect``` 타입의 객체만을 가리키고, ```Triangle``` 객체와 ```Circle```객체의 포인터 변수는 각각 ```Triangle``` 타입과 ```Circle``` 타입의 객체만을 가리킨다. 
