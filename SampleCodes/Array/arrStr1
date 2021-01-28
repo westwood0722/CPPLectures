@@ -1,0 +1,29 @@
+문자열이 담긴 배열 str1에서 ```interesting```을 찾아 다른 단어로 변경하고 변경됨을 확인할 수 있게 출력하시오.
+
+```cpp
+#include <iostream>
+#pragma warning(disable : 4996)
+
+using namespace std;
+
+int main(void)
+{
+    char str1[] = "programming is interesting";
+    char str2[] = "difficult";
+    char str3[] = "interesting";
+
+    char* ptr = strstr(str1, str3);
+
+    
+    cout << "str1 : " << str1 << endl;
+
+    strncpy(ptr, str2, 11);
+
+    cout << "str1 : " << str1 << endl;
+
+    return 0;
+}
+```
+
+
+```#pragma warning(disable : 4996)``` 'str~'을 사용했을 때 unsafe라는 오류가 뜸을 방지하기 위함.
